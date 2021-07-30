@@ -1,0 +1,24 @@
+{
+	"profiles": [
+		{
+			"id": 1,
+			"name": "Foo",
+			"mail": "foo@example.org"
+		},
+		{
+			"id": 2,
+			"name": "Bar",
+			"mail": "bar@example.org"
+		},
+		{
+			"id": 3,
+			"name": "Baz",
+			"mail": "baz@example.org"
+		},
+		{
+			"id": 4,
+			"name": "Qux",
+			"mail": "qux@example.org"
+		}
+	]
+}

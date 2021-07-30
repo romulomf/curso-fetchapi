@@ -1,0 +1,30 @@
+{
+  "name": "curso-fetchapi",
+  "version": "0.1.0",
+  "description": "Curso de Fetch API: requisições http assíncronas com javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romulomf/curso-fetchapi.git"
+  },
+  "author": "Rômulo Machado Flores",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romulomf/curso-fetchapi/issues"
+  },
+  "homepage": "https://github.com/romulomf/curso-fetchapi#readme",
+  "devDependencies": {
+    "@types/node": "^16.4.7",
+    "@types/webpack-dev-server": "latest",
+    "@yarnpkg/sdks": "^2.4.1-rc.4",
+    "ts-loader": "^9.2.4",
+    "ts-node": "latest",
+    "typescript": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest",
+    "webpack-dev-server": "latest"
+  }
+}
