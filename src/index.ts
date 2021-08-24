@@ -1,4 +1,11 @@
-import '@fontsource/roboto';
-import '@fontsource/noto-sans';
+import '@fontsource/montserrat';
+import '@fontsource/pacifico';
 
-import './index.css';
+import { ClientController } from './controller';
+
+import './css/index.css';
+
+import './img/dog.svg';
+
+const clientController = new ClientController();
+clientController.findAll();

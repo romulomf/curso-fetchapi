@@ -5,6 +5,28 @@
 	<title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-	<div class="container mx-auto"></div>
+	<header class="container mx-auto flex justify-between items-center bg-gray-100 text-gray-600 shadow-md rounded-b-lg mb-8 px-4">
+		<img src="dog.svg" class="w-12 h-20" alt="dog">
+		<nav>
+			<ul class="flex font-sans">
+				<li class="ml-8"><a href="#">dashboard</a></li>
+				<li class="ml-8"><a href="#">produtos</a></li>
+				<li class="ml-8"><a href="#">clientes</a></li>
+				<li class="ml-8"><a href="#">pets</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="container mx-auto flex">
+		<table class="table-auto w-full">
+			<caption class="text-left capitalize">dados dos clientes</caption>
+			<thead>
+				<tr>
+					<th scope="col" class="py-5 border-b border-current capitalize">nome</th>
+					<th scope="col" class="py-5 border-b border-current capitalize">e-mail</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</main>
 </body>
 </html>

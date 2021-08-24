@@ -8,14 +8,18 @@ const config: webpack.Configuration = {
 	devtool: 'eval-source-map',
 	entry: './src/index.ts',
 	output: {
+		assetModuleFilename: '[contenthash][ext]',
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'bundle.js',
+		filename: 'bundle.js?[hash]',
 		clean: true
 	},
 	devServer: {
 		compress: false,
 		contentBase: path.resolve(__dirname, 'dist'),
+		hot: true,
 		port: 9000,
+		clientLogLevel: 'error',
+		index: 'main.html'
 	},
 	resolve: {
 		extensions: ['.ts', '.js']
@@ -23,12 +27,12 @@ const config: webpack.Configuration = {
 	module: {
 		rules: [
 			{
-				test: /\.ts/,
+				test: /\.ts$/i,
 				enforce: 'pre',
 				use: ['source-map-loader', 'ts-loader']
 			},
 			{
-				test: /\.css/,
+				test: /\.css/i,
 				use: [
 					{ loader: 'style-loader' },
 					{
@@ -39,6 +43,17 @@ const config: webpack.Configuration = {
 					},
 					{ loader: 'postcss-loader' }
 				]
+			},
+			{
+				test: /\.(woff|woff2|eot|ttf|otf)$/i,
+				type: 'asset/resource',
+			},
+			{
+				test: /\.svg$/i,
+				type: 'asset/resource',
+				generator: {
+					filename: '[name][ext]?[contenthash]'
+				}
 			}
 		]
 	},
@@ -55,9 +70,6 @@ const config: webpack.Configuration = {
 			meta: {
 				charset: 'UTF-8',
 				viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
-				'Content-Security-Policy': {
-					'http-equiv': 'X-UA-Compatible', content: 'IE=edge'
-				}
 			},
 			template: './src/index.html',
 			title: 'Curso Fetch API'
