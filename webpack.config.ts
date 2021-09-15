@@ -73,6 +73,17 @@ const config: webpack.Configuration = {
 			},
 			template: './src/index.html',
 			title: 'Curso Fetch API'
+		}),
+		new HtmlWebpackPlugin({
+			cache: true,
+			filename: path.resolve(__dirname, 'dist/form.html'),
+			hash: true,
+			meta: {
+				charset: 'UTF-8',
+				viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
+			},
+			template: 'src/pages/client-form.html',
+			title: 'Petshop | Formulário de Clientes',
 		})
 	]
 }

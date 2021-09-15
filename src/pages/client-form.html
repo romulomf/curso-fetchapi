@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+	<header class="container mx-auto flex justify-between items-center bg-gray-100 text-gray-600 shadow-md rounded-b-lg mb-8 px-4">
+		<img src="../dog.svg" class="w-12 h-20" alt="dog">
+		<nav>
+			<ul class="flex font-sans">
+				<li class="ml-8"><a href="#">dashboard</a></li>
+				<li class="ml-8"><a href="#">produtos</a></li>
+				<li class="ml-8"><a href="#">clientes</a></li>
+				<li class="ml-8"><a href="#">pets</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="container mx-auto flex">
+		<section class="mb-4 max-w-2xl box-border rounded-lg shadow-sm bg-gray-100">
+			<h1 class="mb-4">novo cliente</h1>
+			<form action="" method="post" class="mt-8">
+				<div class="relative flex flex-col justify-end box-border mb-4">
+					<input id="name" name="name" type="text" placeholder="Nome" required class="box-border border-b p-5 h-12">
+					<label for="name" class="transition-all">nome</label>
+				</div>
+				<div class="relative flex flex-col justify-end box-border mb-4">
+					<input id="mail" name="mail" type="text" placeholder="E-mail" required class="box-border border-b p-5 h-12" pattern="(.+)@(.+)\.(.+)">
+					<label for="mail" class="transition-all">e-mail</label>
+				</div>
+				<input type="submit" value="cadastrar" class="block rounded-r-md max-w-xs box-border text-center">
+			</form>
+		</section>
+	</main>
+</body>
+</html>
