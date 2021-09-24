@@ -14,7 +14,7 @@ class ClientRepository {
 			method: 'GET',
 			mode: 'cors',
 			keepalive: false
-		})
+		});
 		const data: any = await response.json();
 		return data.map((c: any) => new Client(c.name, c.mail, c.id)) as Client[];
 	}
