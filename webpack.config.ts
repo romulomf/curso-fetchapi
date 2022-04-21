@@ -14,12 +14,19 @@ const config: webpack.Configuration = {
 		clean: true
 	},
 	devServer: {
+		client: {
+			logging: 'error',
+		},
+		static: {
+			directory: path.resolve(__dirname, 'dist'),
+			serveIndex: true,
+		},
+		// indica qual é a página que deve ser aberta ao iniciar
+		open: 'main.html',
 		compress: false,
-		contentBase: path.resolve(__dirname, 'dist'),
+		liveReload: true,
 		hot: true,
 		port: 9000,
-		clientLogLevel: 'error',
-		index: 'main.html'
 	},
 	resolve: {
 		extensions: ['.ts', '.js']
