@@ -44,7 +44,6 @@ class ClientController {
 						deleteItem.href = `http://localhost:8080/profiles/delete/${c.Id}`;
 					}
 					tableItems.append(line);
-					console.log(line);
 				});
 			})
 		}

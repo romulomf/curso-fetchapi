@@ -5,7 +5,7 @@
 			"name": "Curso Fetch API (Edge attach)",
 			"port": 9222,
 			"request": "attach",
-			"type": "pwa-msedge",
+			"type": "edge",
 			"url": "http://localhost:9000",
 			"webRoot": "${workspaceFolder}",
 			"sourceMaps": true,
@@ -22,7 +22,7 @@
 			"name": "Curso Fetch API (Chrome attach)",
 			"port": 9222,
 			"request": "attach",
-			"type": "pwa-chrome",
+			"type": "chrome",
 			"webRoot": "${workspaceFolder}",
 			"sourceMaps": true,
 			"sourceMapPathOverrides": {

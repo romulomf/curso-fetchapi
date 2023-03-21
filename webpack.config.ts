@@ -3,7 +3,7 @@ import * as webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import 'webpack-dev-server';
 
-const config: webpack.Configuration = {
+const webpackConfig: webpack.Configuration = {
 	mode: 'development',
 	devtool: 'eval-source-map',
 	entry: './src/index.ts',
@@ -95,4 +95,4 @@ const config: webpack.Configuration = {
 	]
 }
 
-export default config;
+export default webpackConfig;
