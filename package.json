@@ -28,27 +28,27 @@
     "@types/tailwindcss": "^3.1.0",
     "@yarnpkg/sdks": "^3.1.0",
     "autoprefixer": "^10.4.17",
-    "css-loader": "^6.9.1",
+    "css-loader": "^6.10.0",
     "html-webpack-plugin": "^5.6.0",
     "postcss": "^8.4.33",
     "postcss-import": "^16.0.0",
-    "postcss-loader": "^8.0.0",
+    "postcss-loader": "^8.1.0",
     "postcss-preset-env": "^9.3.0",
     "source-map-loader": "^4.0.1",
     "style-loader": "^3.3.2",
     "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3",
-    "webpack": "^5.89.0",
+    "webpack": "^5.90.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
     "@fontsource/montserrat": "^5.0.16",
     "@fontsource/noto-sans": "^5.0.18",
-    "@fontsource/pacifico": "^5.0.5",
+    "@fontsource/pacifico": "^5.0.8",
     "@fontsource/roboto": "^5.0.8",
     "tailwindcss": "^3.4.1"
   },
-  "packageManager": "yarn@4.0.2"
+  "packageManager": "yarn@4.1.0"
 }
